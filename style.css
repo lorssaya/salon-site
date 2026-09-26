@@ -371,22 +371,9 @@ small {
   transform: translateY(-4.5px) rotate(-45deg);
 }
 
-
-  .menu {
-    padding: 40px;
+ .menu {
+  width: 80%;
   }
-
-  .menu ul {
-    gap: 0px;
-  }
-  .price h3,
-  .price_row {
-    width: 70%;
-  }
-
-.menu_slider {
-  gap: 10px;
-}
 
 .menu ul {
   flex: 1;
@@ -397,6 +384,12 @@ small {
 .menu li {
   flex: 100%;
 }
+
+.price h3,
+  .price_row {
+    width: 80%;
+  }
+  
 
 
   .information {
