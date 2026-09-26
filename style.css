@@ -176,6 +176,18 @@ h1 img {
   margin-top: 32px;
 }
 
+.menu_slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu_prev,
+.menu_next {
+  display: none;
+}
+
+
 .price {
   text-align: center;
   padding-bottom: 40px;
@@ -307,16 +319,6 @@ small {
     width: auto;
   }
 
-
-  .menu ul {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .menu li {
-    width: 100%;
-  }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -385,8 +387,49 @@ small {
   }
 
   .menu ul {
-    gap: 40px;
+    gap: 0px;
   }
+  .price h3,
+  .price_row {
+    width: 70%;
+  }
+
+.menu_slider {
+  gap: 10px;
+}
+
+.menu ul {
+  flex: 1;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.menu ul::-webkit-scrollbar {
+  display: none;
+}
+
+.menu li {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+.menu_prev,
+.menu_next {
+  display: block;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  color: #d7d4d2;
+  font-size: 16px;
+}
+
+
+
 
   .information {
     padding-bottom: 0;

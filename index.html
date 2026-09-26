@@ -40,7 +40,7 @@
   <section class="about">
     <h2>Salon A</h2>
     <p>東松山市 高坂駅より徒歩10分の<br>完全プライベートサロン。<br>
-    オールハンドのフェイシャルトリートメントを通して<br>
+    オールハンドのフェイシャルトリートメントで<br>
     寛ぎのエステ時間をお届けします。<br>
     <br>どうぞゆっくりとお過ごしください。</p>
 <div class="buttons">
@@ -51,6 +51,8 @@
 
   <section class="menu" id="menu">
     <h2>Menu</h2>
+    <div class="menu_slider">
+    <button class="menu_prev">◀</button>
     <ul>
       <li>
         <h3>Plan A</h3>
@@ -80,6 +82,8 @@
         <img src="menu_image_1.jpeg" alt="#">
       </li>
     </ul>
+    <button class="menu_next">▶</button>
+    </div>
   </section>
 
   <section class="price">
@@ -175,7 +179,25 @@ $(function () {
     }, 1200);
   });
 
+const slider = $('.menu ul');
+
+  $('.menu_next').on('click', function () {
+    slider.animate({
+      scrollLeft: slider.scrollLeft() + slider.width()
+    }, 400);
+  });
+
+  $('.menu_prev').on('click', function () {
+    slider.animate({
+      scrollLeft: slider.scrollLeft() - slider.width()
+    }, 400);
+  });
+
+  
 });
+
+
+
 </script>
 
 
