@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="80文字まで説明文入れる">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Salon A｜埼玉県東松山市</title>
+
+  <link href="reset.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="body_about">
+
+  <header>
+  
+  <button class="hamburger" type="button" area-label="メニューを開く">
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="global">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#menu">Course</a></li>
+      <li><a href="#">Column</a></li>
+      <li><a href="index.html#information">Information</a></li>
+    </ul>
+  </nav>
+  <h1 class="logo"><img src="swan_logo_final.png" alt="ロゴ"></h1> 
+  </header>
+
+
+  <section class="value">
+    <h2>当サロンについて</h2>
+    <p>はじめまして</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+  </section>
+
+   <section class="profile">
+    <h2>オーナープロフィール</h2>
+    <div class="profile_inner"><div>
+    <img src="menu_image_1.jpeg" alt="プロフィール写真">
+    </div>
+    <div>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    <p>ここに文章が入ります</p>
+    </div></div>
+  </section>
+
+  <footer>
+    <section>
+    <h2>サロン名</h2>
+    <address>
+      <span>TEL:00-0000-0000</span><br>
+      〒000-0000<br>
+      埼玉県東松山市<br>
+    </address>
+    </section>
+
+    <section>
+    <h3>Instagram</h3>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </section>
+
+    <nav class="local">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Column</a></li>
+    </ul>
+    </nav>
+<small>&copy; 2027 Salon A. All Rights Reserved.</small>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+
+$(function () {
+
+  $('.hamburger').on('click', function () {
+  $('.global').toggleClass('is-open');
+  $(this).toggleClass('is-open');
+  $('body').toggleClass('is-open');
+  $('.global a').on('click', function (e) {
+  e.preventDefault();
+  const href = $(this).attr('href');
+  $('.global').removeClass('is-open');
+  $('.hamburger').removeClass('is-open');
+  $('body').removeClass('is-open');
+  setTimeout(function () {
+  window.location.href = href;
+  }, 1200);
+
+});
+  });
+
+});
+</script>
+
+
+</body>
+</html>
