@@ -51,8 +51,6 @@
 
   <section class="menu" id="menu">
     <h2>Menu</h2>
-    <div class="menu_slider">
-    <button class="menu_prev">◀</button>
     <ul>
       <li>
         <h3>Plan A</h3>
@@ -82,8 +80,6 @@
         <img src="menu_image_1.jpeg" alt="#">
       </li>
     </ul>
-    <button class="menu_next">▶</button>
-    </div>
   </section>
 
   <section class="price">
@@ -178,21 +174,6 @@ $(function () {
       window.location.href = href;
     }, 1200);
   });
-
-const slider = $('.menu ul');
-
-  $('.menu_next').on('click', function () {
-    slider.animate({
-      scrollLeft: slider.scrollLeft() + slider.width()
-    }, 400);
-  });
-
-  $('.menu_prev').on('click', function () {
-    slider.animate({
-      scrollLeft: slider.scrollLeft() - slider.width()
-    }, 400);
-  });
-
   
 });
 
