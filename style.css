@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #f7efe3;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -112,7 +112,7 @@ h1 img {
   border: 1px solid #333;
   border-radius: 32px;
   color: #333;
-  background-color: #fff;
+  background-color: #f7efe3;
   font-size: 16px;
   text-decoration: none;
 }
@@ -127,7 +127,7 @@ h1 img {
   padding: 0;
   border: 1px solid #333;
   border-radius: 32px;
-  color: #fff;
+  color: #f7efe3;
   background-color: #333;
   font-size: 16px;
   text-decoration: none;
@@ -169,7 +169,7 @@ h1 img {
 .menu li {
   flex: 1;
   text-align: center;
-  background-color: #d7d4d2;
+  background-color: #fff;
 }
 
 .menu li img {
@@ -208,7 +208,7 @@ h1 img {
 
 .information {
   text-align: center;
-  background-color: #d7d4d2;
+  background-color: #f7efe3;
   padding-bottom: 40px;
 }
 
