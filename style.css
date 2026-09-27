@@ -109,10 +109,10 @@ h1 img {
   height: 64px;
   margin-top: 24px;
   padding: 0;
-  /* border: 1px solid #333; */
+  border: 1px solid #333;
   border-radius: 32px;
-  color: #473e34;
-  background-color: #d7d4d2;
+  color: #333;
+  background-color: #fff;
   font-size: 16px;
   text-decoration: none;
 }
@@ -125,10 +125,10 @@ h1 img {
   height: 64px;
   margin-top: 24px;
   padding: 0;
-  /* border: 1px solid #333; */
+  border: 1px solid #333;
   border-radius: 32px;
-  color: #d7d4d2;
-  background-color: #483a2c;
+  color: #fff;
+  background-color: #333;
   font-size: 16px;
   text-decoration: none;
 }
