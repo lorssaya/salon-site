@@ -208,7 +208,7 @@ h1 img {
 
 .information {
   text-align: center;
-  background-color: #f7efe3;
+  background-color: #fff;
   padding-bottom: 40px;
 }
 
@@ -263,7 +263,7 @@ small {
 }
 
 .profile {
-  background-color: #d7d4d2;
+  background-color: #fff;
 }
 
 .profile_inner {
@@ -326,7 +326,6 @@ small {
     display: block;
   }
   .global {
-    /* display: none; */
 
     position: fixed;
     top: 0;
@@ -335,7 +334,7 @@ small {
     width: 100%;
     height: 100vh;
 
-    background-color: #d7d4d2;
+    background-color: #fff;
     z-index: 10;
 
     transform: translateX(100%);
