@@ -177,6 +177,14 @@ h1 img {
 }
 
 
+.menu h2 {
+   font-family: "Kulim Park", sans-serif;
+   font-weight: 400;
+   letter-spacing: 0.3em;
+   font-size: 1.6rem;
+}
+
+
 
 
 
@@ -450,11 +458,11 @@ small {
 .menu li {
   flex: 100%;
 }
-/*  
+ 
 .price h3,
   .price_row {
     width: 80%;
-  } */
+  }
   
 
 
