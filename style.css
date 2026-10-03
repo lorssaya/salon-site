@@ -94,10 +94,24 @@ h1 img {
   padding-bottom: 40px;
 }
 
+.about h2 {
+  font-family: "Kulim Park", sans-serif;
+  letter-spacing: 0.3em;
+}
+
+.about_en {
+  padding: 24px;
+}
+
 .about p{
-  margin: 8px 0;
   line-height: 1.6;
 }
+
+.about_open {
+  padding: 24px;
+  line-height: 1.6;
+}
+
 
 .buttons {
   display: flex;
