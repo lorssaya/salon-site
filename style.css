@@ -112,6 +112,10 @@ h1 img {
   line-height: 1.6;
 }
 
+.enon {
+  font-weight: 600;
+}
+
 
 .buttons {
   display: flex;
@@ -380,7 +384,7 @@ small {
 }
 
 .about p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 
