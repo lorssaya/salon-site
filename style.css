@@ -364,6 +364,12 @@ small {
 .hamburger.is-open span:last-child {
   transform: translateY(-4.5px) rotate(-45deg);
 }
+
+.about p {
+  font-size: 0.9rem;
+}
+
+
  .menu {
   width: 80%;
   }
