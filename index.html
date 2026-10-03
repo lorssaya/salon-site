@@ -82,7 +82,7 @@ ENONは、年代を問わず、<br>
 その日の状態に合わせてゆったりとお過ごしいただける<br>
 空間と施術メニューをご用意しています。
 </p>
-<button class="button_menu"><a href="#">メニュー 一覧</a></button>
+<a href="#" class="button_menu">メニュー 一覧</a>
 </section>
 
   <!-- <section class="menu">
@@ -200,6 +200,20 @@ $(function () {
       window.location.href = href;
     }, 1200);
   });
+
+  const introduction = document.querySelector('.introduction');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  observer.observe(introduction);
   
 });
 
