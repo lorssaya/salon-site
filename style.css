@@ -87,11 +87,16 @@ h1 img {
 
 
 
-/* サロンについて */
+/* ---------------hero */
 
 .about {
   text-align: center;
   padding-bottom: 40px;
+}
+
+.about img {
+  width: 400px;
+  margin: 40px 0;
 }
 
 .about h2 {
@@ -142,16 +147,42 @@ h1 img {
   text-decoration: none;
 }
 
+/* -----------イントロEnonについて */
+.introduction {
+  text-align: center;
+  font: 400px;
+  background-color: #fff;
+  padding-bottom: 48px;
+}
+
+.introduction h2 {
+  padding-top: 40px;
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.3em;
+}
+
+.introduction img {
+  width: 160px;
+  margin: 24px;
+}
+
+.introduction p {
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
 /* 施術メニュー */
 
 .menu {
+  background-color: #fff;
   text-align: center;
   padding-bottom: 40px;
-  margin: 0 40px 0 40px;
-}
-
-.menu img {
-  width: 400px;
 }
 
 .menu h2 {
@@ -182,7 +213,6 @@ h1 img {
 .menu li {
   flex: 1;
   text-align: center;
-  background-color: #fff;
 }
 
 .menu li img {
@@ -197,6 +227,7 @@ h1 img {
   margin-bottom: 40px;
 }
 
+  
 .price h2 {
   padding: 40px;
 }
@@ -388,9 +419,19 @@ small {
 }
 
 
+.introduction p {
+  font-size: 0.8rem;
+}
+
+.introduction img {
+  width: 80px;
+}
+
+/* 
+
  .menu {
   width: 80%;
-  }
+  }  */
 
 .menu ul {
   flex: 1;
@@ -401,11 +442,11 @@ small {
 .menu li {
   flex: 100%;
 }
-
+/*  
 .price h3,
   .price_row {
     width: 80%;
-  }
+  } */
   
 
 
