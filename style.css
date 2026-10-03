@@ -94,13 +94,11 @@ h1 img {
   padding-bottom: 40px;
 }
 
-.about h2 {
-  padding: 40px;
-}
-
 .about p{
   margin: 8px 0;
+  line-height: 1.6;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -109,11 +107,12 @@ h1 img {
   gap: 8px;
 }
 
-.about_me {
+.about_me,
+.booking {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  width: 200px;
   height: 64px;
   margin-top: 24px;
   padding: 0;
@@ -125,28 +124,16 @@ h1 img {
   text-decoration: none;
 }
 
-.booking {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 240px;
-  height: 64px;
-  margin-top: 24px;
-  padding: 0;
-  border: 1px solid #333;
-  border-radius: 32px;
-  color: #f7efe3;
-  background-color: #333;
-  font-size: 16px;
-  text-decoration: none;
-}
-
 /* 施術メニュー */
 
 .menu {
   text-align: center;
   padding-bottom: 40px;
   margin: 0 40px 0 40px;
+}
+
+.menu img {
+  width: 400px;
 }
 
 .menu h2 {
