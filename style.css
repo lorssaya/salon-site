@@ -97,7 +97,6 @@ h1 img {
 .about img {
   width: 400px;
   margin-top: 32px;
-  border-color: #483a2c;
 }
 
 .about h2 {
@@ -272,27 +271,24 @@ h1 img {
 /* インフォメーション */
 
 .information {
+  background-image: url(shadow.jpg);
   text-align: center;
   padding-bottom: 40px;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .information h2 {
-  padding: 40px 40px 0 40px;
-  font-weight: 400;
-  font-size: 1.3rem;
-  letter-spacing: 0.1em;
+  padding: 56px;
 }
 
-.information h3 {
-  margin-top: 40px;
+.information_list {
+  list-style: none;
 }
 
-.information img {
-  margin-top: 40px;
-}
-
-.information p {
-  font-size: 0.9rem;
+.information_list li {
+  margin-bottom: 3rem;
 }
 
 /* フッター */
@@ -464,11 +460,6 @@ small {
   width: 80px;
 }
 
-/* 
- .menu {
-  width: 80%;
-  }  */
-
 .menu ul {
   flex: 1;
   flex-direction: column;
@@ -483,10 +474,13 @@ small {
   .price_row {
     width: 90%;
   }
-  
+
   .information {
-    padding-bottom: 0;
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
+
   .information h3 {
   font-size: 0.9rem;
   }
