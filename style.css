@@ -183,20 +183,6 @@ h1 img {
 
 
 
-.menu h2 {
-   font-family: "Kulim Park", sans-serif;
-   font-weight: 400;
-   letter-spacing: 0.3em;
-   font-size: 1.6rem;
-}
-
-
-
-
-
-
-
-
 
 /* 施術メニュー */
 
@@ -207,6 +193,10 @@ h1 img {
 }
 
 .menu h2 {
+   font-family: "Kulim Park", sans-serif;
+   font-weight: 400;
+   letter-spacing: 0.3em;
+   font-size: 1.6rem;
   padding: 40px;
 }
 
@@ -271,12 +261,7 @@ h1 img {
 /* インフォメーション */
 
 .information {
-  background-image: url(shadow.jpg);
   text-align: center;
-  padding-bottom: 40px;
-  background-size: 100% auto;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .information h2 {
@@ -473,12 +458,6 @@ small {
 .price h3,
   .price_row {
     width: 90%;
-  }
-
-  .information {
-    background-size: 100% auto;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 
   .information h3 {
