@@ -31,17 +31,18 @@ body.is-open {
 
 .fixed-reserve {
   position: fixed;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  width: calc(100% - 48px);
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(16px + env(safe-area-inset-bottom));
   padding: 16px;
   text-align: center;
+
   background:#7d746b;
   color: #fff;
-  /* border: 1px solid #483a2c; */
   text-decoration: none;
   z-index: 1000;
-  bottom: calc(16px + env(safe-area-inset-bottom));
 }
 
 
@@ -306,6 +307,7 @@ h1 img {
 /* フッター */
 
 footer {
+  font-size: small;
   display: flex;
   flex-direction: column;
   gap: 32px;
