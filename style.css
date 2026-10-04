@@ -26,6 +26,26 @@ body.is-open {
   overflow: hidden;
 }
 
+
+/* -----------------------------ご予約はこちら */
+
+.fixed-reserve {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 16px;
+  text-align: center;
+  background:#7d746b;
+  color: #fff;
+  /* border: 1px solid #483a2c; */
+  text-decoration: none;
+  z-index: 1000;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+}
+
+
+
 h1 {
   text-align: center;
 }
@@ -289,7 +309,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 32px;
+  padding: 32px 32px 100px;
 }
 
 footer img {
