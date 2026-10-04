@@ -28,7 +28,7 @@
   <nav class="global">
     <ul>
       <li><a href="about.html">About</a></li>
-      <li><a href="index.html#service">Menu</a></li>
+      <li><a href="#">Menu</a></li>
       <li><a href="#">Column</a></li>
       <li><a href="index.html#information">Information</a></li>
     </ul>
@@ -60,10 +60,11 @@
     <p>ここに文章が入ります</p>
     </div></div>
   </section>
-
-  <footer>
+ <footer>
     <section>
+    <img src="swan_brown.png" alt="ロゴ">
     <h2>ENON</h2>
+
     <address>
       <span>TEL:00-0000-0000</span><br>
       〒000-0000<br>
@@ -72,44 +73,69 @@
     </section>
 
     <section>
-    <h3>Instagram</h3>
+    <!-- <h3>Instagram</h3> -->
     <a href="https://www.instagram.com/homesalon_enon?stkn=d2Z2MXgyYzFkendt"><i class="fa-brands fa-instagram"></i></a>
     </section>
 
     <nav class="local">
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Column</a></li>
     </ul>
     </nav>
-<small>&copy; 2027 Salon A. All Rights Reserved.</small>
+<small>&copy; 2026 Enon. All Rights Reserved.</small>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script>
 
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
 $(function () {
 
+  // ハンバーガーメニュー
   $('.hamburger').on('click', function () {
-  $('.global').toggleClass('is-open');
-  $(this).toggleClass('is-open');
-  $('body').toggleClass('is-open');
-  $('.global a').on('click', function (e) {
-  e.preventDefault();
-  const href = $(this).attr('href');
-  $('.global').removeClass('is-open');
-  $('.hamburger').removeClass('is-open');
-  $('body').removeClass('is-open');
-  setTimeout(function () {
-  window.location.href = href;
-  }, 1200);
-
-});
+    $('.global').toggleClass('is-open');
+    $(this).toggleClass('is-open');
+    $('body').toggleClass('is-open');
   });
 
+  // メニュー内リンク
+  $('.global a').on('click', function (e) {
+    e.preventDefault();
+
+    const href = $(this).attr('href');
+
+    $('.global').removeClass('is-open');
+    $('.hamburger').removeClass('is-open');
+    $('body').removeClass('is-open');
+
+    setTimeout(function () {
+      window.location.href = href;
+    }, 1200);
+  });
+
+  const introduction = document.querySelector('.introduction');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  observer.observe(introduction);
+  
 });
+
+
+
 </script>
+
 
 
 </body>
