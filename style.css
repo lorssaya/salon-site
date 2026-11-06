@@ -476,14 +476,16 @@ small {
   }
 
   .global ul {
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 48px;
     margin: 0;
-    padding: 0;
+    padding: 120px 20px 40px;
+    box-sizing: border-box;
   }
 
   .global li {
@@ -502,6 +504,10 @@ small {
 
 .hamburger.is-open span:last-child {
   transform: translateY(-4.5px) rotate(-45deg);
+}
+
+.about h2 {
+  margin-top: -20px;
 }
 
 .about p {
@@ -547,9 +553,13 @@ small {
 /* ここから2ページ目 */
 /* 当サロンについて */
   .value h2 {
+    margin-top: -30px;
     padding: 10px 0;
-    margin: 0;
   }
+  .value p {
+  font-size: 0.8rem;
+  }
+
   .circle {
     width: 140px;
     height: 140px;
