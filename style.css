@@ -56,7 +56,7 @@ header h1{
 }
 
 h1 img {
-  width: 180px;
+  width: 80px;
   height: auto;
 }
 
@@ -339,10 +339,43 @@ small {
 /* -----------------ここから2ページ目 */
 /* 当サロンについて */
 
+
+.value h2 {
+  font-family: "Kulim Park", sans-serif;
+  letter-spacing: 0.3em;
+}
+
+.enon_circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border: 1px solid #483a2c;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.on{
+  margin-left: -50px;
+}
+
 .value,
+.message,
 .profile {
   text-align: center;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 .value h2,
@@ -404,7 +437,6 @@ small {
     display: none;
   }
 }
-
 
 
 /* スマホ */
@@ -499,6 +531,28 @@ small {
 
 /* ここから2ページ目 */
 /* 当サロンについて */
+  .value h2 {
+    padding: 10px 0;
+    margin: 0;
+  }
+  .circle {
+    width: 140px;
+    height: 140px;
+    font-size: 80%;
+  }
+
+  .on {
+    margin-left: -40px;
+  }
+
+  .message {
+     font-size: 0.8rem;
+  }
+
+  .enon_circles {
+    padding: 10px 0;
+    margin: 0;
+  }
 
 .profile_inner {
   flex-direction: column;
