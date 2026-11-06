@@ -456,6 +456,7 @@ small {
 
 .faq_item[open] summary::after {
   content: "-";
+  font-size: 24px;
 }
 
 .faq_item p {
@@ -647,9 +648,8 @@ small {
 
 }
 
-.faq,
-.faq p {
-  font-size: 80%;
+.faq {
+  font-size: 90%;
 }
 
 
