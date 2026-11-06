@@ -357,6 +357,7 @@ small {
 }
 
 .enon_circles {
+  isolation: isolate;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +380,7 @@ small {
 }
 
 .on{
-  margin-left: -50px;
+  margin-left: -40px;
 }
 
 .value,
@@ -410,6 +411,64 @@ small {
   margin-bottom: 40px;
 }
 
+/* ----------------------------------------ここからFAQ */
+.faq {
+  padding: 80px 24px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.faq_subtitle {
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 64px;
+}
+
+.faq_category {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.faq_category h3 {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 80px 0 20px;
+}
+
+.faq_item {
+  border-bottom: 0.8px solid #483a2c;
+}
+
+.faq_item summary {
+  padding: 24px 32px 24px 0;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+
+.faq_item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.faq_item[open] summary::after {
+  content: "-";
+}
+
+.faq_item p {
+  padding: 0 20px 24px 0;
+  line-height: 1.9;
+  font-size: 14px;
+}
 
 
 
@@ -549,6 +608,8 @@ small {
 /* ここから2ページ目 */
 /* 当サロンについて */
   .value h2 {
+    font-family: "Kulim Park", sans-serif;
+    letter-spacing: 0.3em;
     margin-top: -30px;
     padding: 10px 0;
   }
@@ -583,5 +644,23 @@ small {
   margin: 0 auto;
 }
 
+/* ここからFAQ */
+
+.faq h2 {
+   font-family: "Kulim Park", sans-serif;
+   letter-spacing: 0.3em;
+  margin-top: -40px;
+
+}
+
+.faq,
+.faq p {
+  font-size: 80%;
+}
+
+
+.faq_item summary::after {
+  font-size: 18px;
+}
 
 }
