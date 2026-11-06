@@ -72,16 +72,17 @@ header h1{
 
 h1 img {
   width: 80px;
+  margin: 80px 0 0;
   height: auto;
 }
 
 /* グローバルナビゲーション */
-
 .global ul {
   display: flex;
 }
 
 .global li {
+  font-size: small;
   flex: 1;
   text-align: center;
   padding: 24px;
@@ -182,11 +183,7 @@ h1 img {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.1em;
-}
-
-.introduction img {
-  width: 160px;
-  margin: 24px;
+  padding-bottom: 64px;
 }
 
 .introduction p {
