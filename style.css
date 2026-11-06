@@ -135,7 +135,8 @@ h1 img {
   margin-top: 32px;
 }
 
-.about h2 {
+.about h2,
+.faq h2 {
   font-family: "Kulim Park", sans-serif;
   letter-spacing: 0.3em;
 }
@@ -416,13 +417,6 @@ small {
   padding: 80px 24px;
 }
 
-.faq h2 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: normal;
-  margin-bottom: 8px;
-}
-
 .faq_subtitle {
   text-align: center;
   letter-spacing: 0.2em;
@@ -649,7 +643,7 @@ small {
 .faq h2 {
    font-family: "Kulim Park", sans-serif;
    letter-spacing: 0.3em;
-  margin-top: -40px;
+  margin-top: -100px;
 
 }
 
