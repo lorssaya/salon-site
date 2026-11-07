@@ -131,7 +131,7 @@ h1 img {
 }
 
 .about img {
-  width: 400px;
+  width: 200px;
   margin-top: 32px;
 }
 
@@ -162,7 +162,6 @@ h1 img {
 .introduction {
   padding: 32px 0 64px;
   text-align: center;
-  font: 400px;
   background-color: #fff;
   opacity: 0;
   transform: translateY(30px);
@@ -186,8 +185,33 @@ h1 img {
   padding-bottom: 64px;
 }
 
-.introduction p {
-  line-height: 1.6;
+.introduction_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.introduction_inner img {
+  width: 300px;
+  height: auto;
+}
+
+.introduction_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.introduction_text p {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.introduction_text .button_menu {
+  margin-top: 24px;
 }
 
 .introduction_enon {
@@ -198,7 +222,7 @@ h1 img {
 }
 
 .button_menu {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 200px;
@@ -352,7 +376,8 @@ small {
 /* 当サロンについて */
 
 
-.value h2 {
+.value h2,
+.profile h2 {
   font-family: "Kulim Park", sans-serif;
   letter-spacing: 0.3em;
 }
@@ -391,13 +416,16 @@ small {
   padding: 40px;
 }
 
-.value h2,
-.profile h2 {
+.value h2 {
   padding: 40px;
 }
 
 .profile {
   background-color: #fff;
+}
+
+.profile h2 {
+  padding-bottom: 40px;
 }
 
 .profile_inner {
@@ -409,7 +437,7 @@ small {
 .profile img {
   width: 400px;
   height: auto;
-  margin-bottom: 40px;
+  padding: 40px;
 }
 
 /* ----------------------------------------ここからFAQ */
@@ -565,16 +593,33 @@ small {
 }
 
 .about img {
-  width: 80%;;
+  width: 40%;
 }
 
+.introduction h3 {
+  padding-bottom: 32px;
+}
+.introduction_inner {
+  flex-direction: column;
+  align-items: center;
+}
 
-.introduction p {
+.introduction_inner img {
+  width: 50%;
+  height: auto;
+}
+
+.introduction_text {
+  width: 100%;
   font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.introduction img {
-  width: 80px;
+.introduction_text p {
+  text-align: center;
 }
 
 .menu ul {
@@ -629,6 +674,10 @@ small {
   .enon_circles {
     padding: 10px 0;
     margin: 0;
+  }
+
+  .profile p {
+    font-size: 0.8rem;
   }
 
 .profile_inner {
