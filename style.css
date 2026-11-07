@@ -441,59 +441,67 @@ small {
 
 /* ----------------------------------はじめてのお客様へ */
  
-.treatment_flow {
-text-align: center;
+.servise_flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flow_list {
-list-style: none;
-padding: 0;
-margin: 64px auto 0;
-max-width: 400px;
-}
-.flow_item {
-position: relative;
-padding-bottom: 80px;
-}
-
-.flow_item:not(:last-child)::after {
-content: "";
-display: block;
-width: 1px;
-height: 36px;
-background-color: #c9bdb0;
-position: absolute;
-bottom: 22px;
-left: 50%;
-transform: translateX(-50%);
-}
 .flow_number {
-display: block;
-font-size: 13px;
-letter-spacing: 0.2em;
-color: #9a7b61;
-margin-bottom: 16px;
-}
-.flow_item h3 {
-font-size: 20px;
-font-weight: normal;
-margin-bottom: 16px;
-}
-.flow_item p {
-font-size: 14px;
-line-height: 2;
-}
-.flow_image {
-display: block;
-width: 100%;
-max-width: 480px;
-height: auto;
-margin: 32px auto 0;
-border-radius: 2px;
+  padding-left: 0;
 }
 
-.flow_item:last-child {
-padding-bottom: 0;
+.flow_number > li {
+  list-style-type: none;
+  display: flex;
+  padding: 20px 0;
+}
+
+.flow_number > li dl dt {
+  font-size: 1.2em;
+  line-height: 2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flow_number > li .flow_icon {
+  line-height: 1;
+  font-size: 2em;
+  color: #E26B5D;
+  text-align: center;
+  width: 70px;
+  position: relative;
+  margin-top: 0;
+}
+
+.flow_number > li .flow_icon::before {
+  content: 'STEP';
+  font-size: 0.3em;
+  display: block;
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+}
+/* 
+.flow_number > li .flow_icon::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: calc(100% - 40px);
+  background-color: #858585;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  margin: auto;
+} */
+
+.flow_number > li dl dd {
+  margin: 0;
+}
+
+.flow_number > li dl {
+  width: calc(100% - 70px);
+  margin-top: 0.8em;
 }
 
 
@@ -687,6 +695,12 @@ padding-bottom: 0;
   text-align: center;
 }
 
+
+
+
+
+
+
 .menu ul {
   flex: 1;
   flex-direction: column;
@@ -770,5 +784,14 @@ padding-bottom: 0;
 .faq_item summary::after {
   font-size: 18px;
 }
+
+
+/* --------------------初めてのお客様へ */
+
+.servise_flow {
+  font-size: 80%;
+}
+
+
 
 }
