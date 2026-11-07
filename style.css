@@ -513,14 +513,12 @@ small {
 
 
 /* ----------------------------------------ここからFAQ */
-.faq {
-  padding: 80px 24px;
+.faq_body {
+  background-color: #fff;
 }
 
-.faq_subtitle {
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom: 64px;
+.faq {
+  padding: 64px 32px;
 }
 
 .faq_category {
@@ -538,7 +536,7 @@ small {
 }
 
 .faq_item summary {
-  padding: 24px 32px 24px 0;
+  padding: 20px 32px 20px 0;
   cursor: pointer;
   position: relative;
   list-style: none;
@@ -563,6 +561,10 @@ small {
   padding: 0 20px 24px 0;
   line-height: 1.9;
   font-size: 14px;
+}
+
+.faq_footer {
+  background-color: #f7efe3;
 }
 
 
@@ -783,8 +785,13 @@ small {
 
 }
 
-.faq {
-  font-size: 90%;
+.faq h3 {
+  font-size: 1rem;
+}
+
+.faq,
+.faq p {
+  font-size: 0.8rem;
 }
 
 
