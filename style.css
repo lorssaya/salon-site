@@ -654,6 +654,14 @@ padding-bottom: 0;
   width: 40%;
 }
 
+.introduction {
+  padding-bottom: 56px;
+}
+
+.introduction_enon {
+  font-size: 80%;
+}
+
 .introduction h3 {
   padding-bottom: 32px;
 }
