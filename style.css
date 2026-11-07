@@ -413,6 +413,7 @@ small {
 .profile {
   text-align: center;
   padding: 40px 0 40px 0;
+  line-height: 1.8;
 }
 
 .value h2 {
@@ -431,6 +432,12 @@ small {
   display: flex;
   gap: 40px;
   justify-content: center;
+}
+
+.profile_detail {
+  width: 320px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .profile img {
