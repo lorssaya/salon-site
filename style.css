@@ -440,6 +440,64 @@ small {
   padding: 40px;
 }
 
+/* ----------------------------------はじめてのお客様へ */
+ 
+.treatment_flow {
+text-align: center;
+}
+
+.flow_list {
+list-style: none;
+padding: 0;
+margin: 64px auto 0;
+max-width: 400px;
+}
+.flow_item {
+position: relative;
+padding-bottom: 80px;
+}
+
+.flow_item:not(:last-child)::after {
+content: "";
+display: block;
+width: 1px;
+height: 36px;
+background-color: #c9bdb0;
+position: absolute;
+bottom: 22px;
+left: 50%;
+transform: translateX(-50%);
+}
+.flow_number {
+display: block;
+font-size: 13px;
+letter-spacing: 0.2em;
+color: #9a7b61;
+margin-bottom: 16px;
+}
+.flow_item h3 {
+font-size: 20px;
+font-weight: normal;
+margin-bottom: 16px;
+}
+.flow_item p {
+font-size: 14px;
+line-height: 2;
+}
+.flow_image {
+display: block;
+width: 100%;
+max-width: 480px;
+height: auto;
+margin: 32px auto 0;
+border-radius: 2px;
+}
+
+.flow_item:last-child {
+padding-bottom: 0;
+}
+
+
 /* ----------------------------------------ここからFAQ */
 .faq {
   padding: 80px 24px;
@@ -483,8 +541,8 @@ small {
 }
 
 .faq_item[open] summary::after {
-  content: "－";
-  font-size: 24px;
+  content: "close";
+  font-size: 16px;
 }
 
 .faq_item p {
