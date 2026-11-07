@@ -375,7 +375,6 @@ small {
 /* -----------------ここから2ページ目 */
 /* 当サロンについて */
 
-
 .value h2,
 .profile h2 {
   font-family: "Kulim Park", sans-serif;
@@ -655,7 +654,7 @@ padding-bottom: 0;
 }
 
 .introduction {
-  padding-bottom: 56px;
+  padding: 10px 0 56px;
 }
 
 .introduction_enon {
@@ -663,7 +662,7 @@ padding-bottom: 0;
 }
 
 .introduction h3 {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 }
 .introduction_inner {
   flex-direction: column;
