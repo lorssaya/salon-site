@@ -420,6 +420,15 @@ small {
   padding: 40px;
 }
 
+.value_text {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.value_text img {
+  width: 180px;
+}
+
 .profile {
   background-color: #fff;
 }
@@ -519,6 +528,18 @@ small {
 
 .faq {
   padding: 64px 32px;
+}
+
+
+.faq p {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.faq h2 {
+  padding: 40px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .faq_category {
@@ -764,6 +785,10 @@ small {
     margin: 0;
   }
 
+  .value_text {
+    font-size: 0.8rem;
+  }
+
   .profile p {
     font-size: 0.8rem;
   }
@@ -779,9 +804,7 @@ small {
 /* ここからFAQ */
 
 .faq h2 {
-   font-family: "Kulim Park", sans-serif;
-   letter-spacing: 0.3em;
-  margin-top: -100px;
+   margin-top: -100px;
 
 }
 
