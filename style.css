@@ -536,7 +536,7 @@ small {
   text-align: center;
   width: fit-content;
   margin: 0 auto 30px;
-  border-bottom: 1px solid #483a2c;
+  border-bottom: 0.5px solid #483a2c;
   padding: 40px 40px 0 40px;
 }
 
