@@ -530,11 +530,14 @@ small {
   padding: 64px 32px;
 }
 
-
-.faq h2 {
-  padding: 40px;
+.faq_h2 {
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
+  width: fit-content;
+  margin: 0 auto 30px;
+  border-bottom: 1px solid #483a2c;
+  padding: 40px 40px 0 40px;
 }
 
 .faq_category {
@@ -800,10 +803,6 @@ small {
 
 .faq h2 {
    margin-top: -100px;
-}
-
-.faq h3 {
-  font-size: 1rem;
 }
 
 .faq,
