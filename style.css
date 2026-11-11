@@ -565,6 +565,7 @@ small {
 }
 
 .faq_item .faq_content {
+  padding-bottom: 20px;
   overflow: hidden;
 }
 
@@ -844,23 +845,24 @@ small {
    margin-top: -100px;
 }
 
-.faq {
+.faq,
+.faq p {
   font-size: 0.8rem;
 }
 
 .faq_icon {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 
   .faq_icon::before {
-    width: 10px;
+    width: 12px;
     height: 1px;
   }
 
   .faq_icon::after {
     width: 1px;
-    height: 10px;
+    height: 12px;
   }
 
 
