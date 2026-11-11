@@ -217,16 +217,19 @@
 
       details.find('summary').on('click', function (e) {
 
-        if (details.prop('open')) {
-          e.preventDefault();
+       if (details.prop('open')) {
+  e.preventDefault();
 
-          content.stop().animate({
-            height: 0,
-            opacity: 0
-          }, 600, function () {
-            details.prop('open', false);
-          });
-        }
+  content.stop().animate({
+    height: 0,
+    opacity: 0
+  }, 600, function () {
+
+    // 閉じ終わった瞬間に＋マークに戻す
+    details.prop('open', false);
+
+  });
+}
 
       });
 

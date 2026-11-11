@@ -535,7 +535,7 @@ small {
   text-align: center;
   width: fit-content;
   margin: 0 auto 30px;
-  padding: 40px 40px 0 40px;
+  padding: 40px 40px 0;
 }
 
 .faq_category {
@@ -548,6 +548,7 @@ small {
   padding-bottom: 40px;
 }
 
+/* アコーディオン */
 .faq_item {
   border-bottom: 0.8px solid #483a2c;
 }
@@ -563,6 +564,10 @@ small {
   display: none;
 }
 
+.faq_item .faq_content {
+  overflow: hidden;
+}
+
 .faq_item p {
   padding: 0 20px 24px 0;
   line-height: 1.9;
@@ -570,10 +575,7 @@ small {
   margin: 0;
 }
 
-.faq_item .faq_content {
-  overflow: hidden;
-}
-
+/* ＋マーク */
 .faq_icon {
   position: absolute;
   right: 0;
@@ -588,7 +590,6 @@ small {
   content: "";
   position: absolute;
   background-color: #483a2c;
-  transition: transform 1s ease;
 }
 
 .faq_icon::before {
@@ -607,10 +608,16 @@ small {
   transform: translateX(-50%);
 }
 
-/* 開いたときに縦線をゆっくり消す */
+/* 開いたとき */
 .faq_item[open] .faq_icon::after {
   transform: translateX(-50%) rotate(90deg);
   opacity: 0;
+}
+
+/* 閉じるとき */
+.faq_icon.is-closing::after {
+  transform: translateX(-50%) rotate(0deg) !important;
+  opacity: 1 !important;
 }
 
 .faq_footer {
