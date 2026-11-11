@@ -535,7 +535,7 @@ small {
   text-align: center;
   width: fit-content;
   margin: 0 auto 30px;
-  padding: 40px 40px 0;
+  padding: 40px 40px 0 40px;
 }
 
 .faq_category {
@@ -569,9 +569,8 @@ small {
 }
 
 .faq_item p {
-  padding: 0 20px 24px 0;
-  line-height: 1.9;
-  font-size: 14px;
+  line-height: 2;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -589,7 +588,7 @@ small {
 .faq_icon::after {
   content: "";
   position: absolute;
-  background-color: #483a2c;
+  background-color: #928980;
   transition: transform 1s ease, opacity 1s ease;
 }
 
@@ -845,10 +844,10 @@ small {
    margin-top: -100px;
 }
 
-.faq,
-.faq p {
+.faq {
   font-size: 0.8rem;
 }
+
 .faq_icon {
     width: 12px;
     height: 12px;
