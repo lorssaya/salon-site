@@ -849,18 +849,18 @@ small {
 }
 
 .faq_icon {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 
   .faq_icon::before {
-    width: 12px;
+    width: 10px;
     height: 1px;
   }
 
   .faq_icon::after {
     width: 1px;
-    height: 12px;
+    height: 10px;
   }
 
 
