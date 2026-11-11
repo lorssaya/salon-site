@@ -450,7 +450,8 @@ small {
 }
 
 .profile img {
-  width: 400px;
+  width: 320px;
+  border: 6px solid  #f7efe3;
   height: auto;
   padding: 40px;
 }
@@ -826,15 +827,17 @@ small {
     font-size: 0.8rem;
   }
 
-  .profile p {
-    font-size: 0.8rem;
-  }
+    .profile h2 {
+    margin-bottom: 0;
+    }
 
 .profile_inner {
   flex-direction: column;
 }
 
 .profile_inner img {
+  width: 280px;
+  padding: 0;
   margin: 0 auto;
 }
 
