@@ -531,12 +531,11 @@ small {
 }
 
 .faq_h2 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   text-align: center;
   width: fit-content;
   margin: 0 auto 30px;
-  border-bottom: 0.5px solid #483a2c;
   padding: 40px 40px 0 40px;
 }
 
@@ -561,25 +560,58 @@ small {
   list-style: none;
 }
 
-.faq_item summary::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.faq_item[open] summary::after {
-  content: "close";
-  font-size: 16px;
+.faq_item summary::-webkit-details-marker {
+  display: none;
 }
 
 .faq_item p {
   padding: 0 20px 24px 0;
   line-height: 1.9;
   font-size: 14px;
+  margin: 0;
+}
+
+.faq_item .faq_content {
+  overflow: hidden;
+}
+
+.faq_icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+
+.faq_icon::before,
+.faq_icon::after {
+  content: "";
+  position: absolute;
+  background-color: #483a2c;
+  transition: transform 0.5s ease;
+}
+
+.faq_icon::before {
+  width: 16px;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.faq_icon::after {
+  width: 1px;
+  height: 16px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 開いたときに縦線をゆっくり消す */
+.faq_item[open] .faq_icon::after {
+  transform: translateX(-50%) rotate(90deg);
+  opacity: 0;
 }
 
 .faq_footer {
