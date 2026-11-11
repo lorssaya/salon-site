@@ -595,14 +595,14 @@ small {
 
 .faq_icon::before {
   width: 16px;
-  height: 1px;
+  height: 0.8px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
 .faq_icon::after {
-  width: 1px;
+  width: 0.8px;
   height: 16px;
   top: 0;
   left: 50%;
@@ -613,6 +613,12 @@ small {
 .faq_item[open] .faq_icon::after {
   transform: translateX(-50%) rotate(90deg);
   opacity: 0;
+}
+
+/* 閉じるとき */
+.faq_icon.is-closing::after {
+  transform: translateX(-50%) rotate(0deg) !important;
+  opacity: 1 !important;
 }
 
 .faq_footer {
@@ -843,8 +849,7 @@ small {
 .faq p {
   font-size: 0.8rem;
 }
-
-  .faq_icon {
+.faq_icon {
     width: 12px;
     height: 12px;
   }
@@ -857,10 +862,10 @@ small {
   .faq_icon::after {
     width: 0.8px;
     height: 12px;
-    top: 0;
-    left: 50%;
-    opacity: 1;
   }
+
+
+
 
 /* --------------------初めてのお客様へ */
 
