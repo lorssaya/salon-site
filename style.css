@@ -587,8 +587,8 @@ small {
 .faq_icon::after {
   content: "";
   position: absolute;
-  background-color: #928980;
-  transition: transform 1s ease, opacity 1s ease;
+  background-color: #483a2c;
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .faq_icon::before {

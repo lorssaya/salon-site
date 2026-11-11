@@ -189,6 +189,27 @@
 
     });
 
+    // FAQアコーディオン
+$('.faq_item summary').on('click', function (e) {
+  e.preventDefault();
+
+  const $details = $(this).parent('.faq_item');
+  const $content = $details.find('.faq_content');
+
+  if ($details.attr('open')) {
+    // 閉じる
+    $content.stop().slideUp(600, function () {
+      $details.removeAttr('open');
+    });
+  } else {
+    // 開く
+    $details.attr('open', true);
+    $content.hide().stop().slideDown(600);
+  }
+});
+
+    
+
   </script>
 
 
