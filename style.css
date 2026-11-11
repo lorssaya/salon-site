@@ -615,12 +615,6 @@ small {
   opacity: 0;
 }
 
-/* 閉じるとき */
-.faq_icon.is-closing::after {
-  transform: translateX(-50%) rotate(0deg) !important;
-  opacity: 1 !important;
-}
-
 .faq_footer {
   background-color: #f7efe3;
 }
@@ -850,7 +844,6 @@ small {
   font-size: 0.8rem;
 }
 
-
   .faq_icon {
     width: 12px;
     height: 12px;
@@ -864,9 +857,10 @@ small {
   .faq_icon::after {
     width: 0.8px;
     height: 12px;
+    top: 0;
+    left: 50%;
+    opacity: 1;
   }
-
-
 
 /* --------------------初めてのお客様へ */
 
