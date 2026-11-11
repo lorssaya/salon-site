@@ -800,8 +800,7 @@ small {
     margin-top: -30px;
     padding: 10px 0;
   }
-  .value p,
-  .profile p {
+  .value p {
   font-size: 0.8rem;
   }
 
@@ -824,7 +823,8 @@ small {
     margin: 0;
   }
 
-  .value_text {
+  .value_text,
+  .profile {
     font-size: 0.8rem;
   }
 
