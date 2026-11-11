@@ -420,6 +420,15 @@ small {
   padding: 40px;
 }
 
+.value_text {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.value_text img {
+  width: 180px;
+}
+
 .profile {
   background-color: #fff;
 }
@@ -441,7 +450,8 @@ small {
 }
 
 .profile img {
-  width: 400px;
+  width: 320px;
+  border: 6px solid  #f7efe3;
   height: auto;
   padding: 40px;
 }
@@ -511,61 +521,101 @@ small {
   margin-top: 0.8em;
 }
 
-
 /* ----------------------------------------ここからFAQ */
-.faq {
+.faq_body {
   background-color: #fff;
-  padding: 80px 24px;
 }
 
-.faq_subtitle {
+.faq {
+  padding: 0 32px 64px;
+}
+
+.faq_h2 {
   text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom: 64px;
+  font-weight: 300;
 }
 
 .faq_category {
   max-width: 700px;
   margin: 0 auto;
 }
-.faq_category h3 {
-  font-size: 18px;
-  font-weight: normal;
-  padding: 80px 0 20px;
+
+.faq_sub {
+  text-align: center;
+  padding-bottom: 40px;
 }
 
+/* アコーディオン */
 .faq_item {
   border-bottom: 0.8px solid #483a2c;
 }
 
 .faq_item summary {
-  padding: 24px 32px 24px 0;
+  padding: 20px 32px 20px 0;
   cursor: pointer;
   position: relative;
   list-style: none;
 }
 
-.faq_item summary::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  font-weight: 300;
+.faq_item summary::-webkit-details-marker {
+  display: none;
 }
 
-.faq_item[open] summary::after {
-  content: "close";
-  font-size: 16px;
+.faq_item .faq_content {
+  padding-bottom: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .faq_item p {
-  padding: 0 20px 24px 0;
-  line-height: 1.9;
-  font-size: 14px;
+  line-height: 2;
+  font-size: 16px;
+  margin: 0;
 }
 
+/* ＋マーク */
+.faq_icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+
+.faq_icon::before,
+.faq_icon::after {
+  content: "";
+  position: absolute;
+  background-color: #928980;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.faq_icon::before {
+  width: 16px;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.faq_icon::after {
+  width: 1px;
+  height: 16px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 開いたとき */
+.faq_item[open] .faq_icon::after {
+  transform: translateX(-50%) rotate(90deg);
+  opacity: 0;
+}
+
+.faq_footer {
+  background-color: #f7efe3;
+}
 
 
 /* レスポンシブ対応 */
@@ -763,35 +813,52 @@ small {
     margin: 0;
   }
 
-  .profile p {
+  .value_text,
+  .profile {
     font-size: 0.8rem;
   }
+
+    .profile h2 {
+    margin-bottom: 0;
+    }
 
 .profile_inner {
   flex-direction: column;
 }
 
 .profile_inner img {
+  width: 280px;
+  padding: 0;
   margin: 0 auto;
 }
 
 /* ここからFAQ */
 
 .faq h2 {
-   font-family: "Kulim Park", sans-serif;
-   letter-spacing: 0.3em;
-  margin-top: -100px;
-
+   font-size: 1rem;
 }
 
-.faq {
-  font-size: 90%;
+.faq,
+.faq p {
+  font-size: 0.8rem;
 }
 
+.faq_icon {
+    width: 12px;
+    height: 12px;
+  }
 
-.faq_item summary::after {
-  font-size: 18px;
-}
+  .faq_icon::before {
+    width: 12px;
+    height: 1px;
+  }
+
+  .faq_icon::after {
+    width: 1px;
+    height: 12px;
+  }
+
+
 
 
 /* --------------------初めてのお客様へ */
