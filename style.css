@@ -319,6 +319,12 @@ h1 img {
   padding-bottom: 28px;
 }
 
+
+.information p {
+  line-height: 1.8;
+}
+
+
 .information h2 {
   padding: 48px;
   }
@@ -429,7 +435,7 @@ small {
 }
 
 .profile {
-  padding: 56px;
+  padding: 56px 0 56px 0;
   background-color: #fff;
 }
 
@@ -761,12 +767,6 @@ small {
   text-align: center;
 }
 
-
-
-
-
-
-
 .menu ul {
   flex: 1;
   flex-direction: column;
@@ -794,6 +794,10 @@ small {
 .information p {
   font-size: 0.8rem;
 }
+
+nav.local a {
+    font-size: 0.6rem;
+  }
 
 
 
