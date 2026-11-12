@@ -325,30 +325,16 @@ h1 img {
 
 .information_list {
   list-style: none;
-  padding-left: 40px;
-}
-
-.information_list h3 {
-  text-align: left;
-  width: 80px;
-}
-
-
-.information_list p {
-  text-align: left;
-  margin: 0;
 }
 
 .information_list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
   margin-bottom: 20px;
 }
 
 /* フッター */
 
 footer {
+  text-align: center;
   font-size: small;
   display: flex;
   flex-direction: column;
@@ -357,21 +343,25 @@ footer {
 }
 
 footer img {
-  width: 80px;
+  width: 64px;
 }
 
 footer h2 {
   font-family: "Kulim Park", sans-serif;
    font-weight: 600;
    letter-spacing: 0.3em;
-   font-size: 1.6rem;
-   padding-bottom: 40px;
+   font-size: 1rem;
 }
   
 .fa-instagram {
   font-size: 24px;
 }
 
+.local ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
 
 small {
   display: block;
@@ -380,6 +370,10 @@ small {
 
 /* -----------------ここから2ページ目 */
 /* 当サロンについて */
+
+.value {
+  text-align: center;
+}
 
 .value h2,
 .profile h2 {
@@ -414,11 +408,10 @@ small {
   margin-left: -40px;
 }
 
-.value,
 .message,
 .profile {
   text-align: center;
-  padding: 40px 0 48px 0;
+  padding: 40px 0 56px 0;
   line-height: 1.8;
 }
 
@@ -436,11 +429,12 @@ small {
 }
 
 .profile {
+  padding: 56px;
   background-color: #fff;
 }
 
 .profile h2 {
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .profile_inner {
@@ -456,10 +450,9 @@ small {
 }
 
 .profile img {
-  width: 320px;
+  width: 300px;
   border: 6px solid  #f7efe3;
   height: auto;
-  padding: 40px;
 }
 
 /* ----------------------------------はじめてのお客様へ */
@@ -537,8 +530,10 @@ small {
 }
 
 .faq_h2 {
+  font-family: "Kulim Park", sans-serif;
+  letter-spacing: 0.3em;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .faq_category {
@@ -550,6 +545,12 @@ small {
   text-align: center;
   padding-bottom: 40px;
 }
+
+.faq_footer {
+  background-color: #f7efe3;
+}
+
+
 
 /* アコーディオン */
 .faq_item {
@@ -736,6 +737,7 @@ small {
 .introduction h3 {
   padding-bottom: 30px;
 }
+
 .introduction_inner {
   flex-direction: column;
   align-items: center;
@@ -786,7 +788,6 @@ small {
 
 
   .information h3 {
-  width: 16vw;
   font-size: 0.9rem;
   }
   
@@ -798,6 +799,11 @@ small {
 
 /* ここから2ページ目 */
 /* 当サロンについて */
+
+.value {
+  padding: 40px 0 20px 0;
+}
+
   .value h2 {
     font-family: "Kulim Park", sans-serif;
     letter-spacing: 0.3em;
