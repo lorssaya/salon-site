@@ -215,7 +215,8 @@ h1 img {
   margin-top: 24px;
 }
 
-.introduction_enon {
+.introduction_enon,
+.information h2 {
    font-family: "Kulim Park", sans-serif;
    font-weight: 600;
    letter-spacing: 0.3em;
@@ -777,11 +778,12 @@ small {
 .price h3,
   .price_row {
     width: 90%;
-  }
+}
 
   .information h2 {
-    font-size: 90%;
-  }
+  font-size: 1.2rem;
+}
+
 
   .information h3 {
   width: 16vw;
