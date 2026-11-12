@@ -177,6 +177,19 @@ h1 img {
 .introduction h2 {
   padding-top: 32px;
   letter-spacing: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.introduction h2::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #9783a1;
+  flex-shrink: 0;
 }
 
 .introduction h3 {
@@ -327,7 +340,20 @@ h1 img {
 
 .information h2 {
   padding: 48px;
-  }
+  letter-spacing: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+  .information h2::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #9783a1;
+  flex-shrink: 0;
+}
 
 .information_list {
   list-style: none;
