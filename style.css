@@ -136,7 +136,8 @@ h1 img {
 }
 
 .about h2,
-.information h2 {
+.information h2,
+.contact h2 {
   font-family: "Kulim Park", sans-serif;
   letter-spacing: 0.3em;
 }
@@ -363,6 +364,38 @@ h1 img {
   margin-bottom: 20px;
 }
 
+/* コンタクト */
+
+.contact {
+  text-align: center;
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  /* border: 1px solid #333; */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contact h2 {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.contact h2::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #9783a1;
+  flex-shrink: 0;
+}
+
+
+
 /* フッター */
 
 footer {
@@ -371,7 +404,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 32px 32px 100px;
+  padding: 32px 32px 100px 32px;
 }
 
 footer img {
@@ -821,6 +854,15 @@ small {
 .information p {
   font-size: 0.8rem;
 }
+
+
+
+.contact {
+  font-size: 80%;
+}
+
+
+
 
 nav.local a {
     font-size: 0.6rem;
