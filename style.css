@@ -373,12 +373,12 @@ h1 img {
   max-width: 600px;
   margin: 0 auto;
   /* border: 1px solid #333; */
-  padding: 40px;
+  padding: 40px 0;
   box-sizing: border-box;
 }
 
 .contact h2 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -792,7 +792,7 @@ small {
 }
 
 .introduction {
-  padding: 10px 0 56px 0;
+  padding: 10px 0 40px 0;
 }
 
 .introduction_enon {
