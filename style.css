@@ -252,55 +252,11 @@ h1 img {
   box-sizing: border-box;
 }
 
+/* ----------------------施術メニュー料金 */
 
-
-/* 施術メニュー */
 /* 
-.menu {
-  background-color: #fff;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-.menu h2 {
-   font-family: "Kulim Park", sans-serif;
-   font-weight: 400;
-   letter-spacing: 0.3em;
-   font-size: 1.6rem;
-  padding: 40px;
-}
-
-.menu h3 {
-  margin: 24px 0 16px;
-}
-
-.menu li span {
-  display: block;
-  margin-bottom: 18px;
-}
-
-.menu li p {
-  margin: 4px 0;
-}
-
-.menu ul {
-  display: flex;
-  gap: 40px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.menu li {
-  flex: 1;
-  text-align: center;
-}
-
-.menu li img {
-  margin-top: 32px;
-}
-
 .price {
+  background-color: #fff;
   text-align: center;
   padding:80px;
   margin-bottom: 40px;
@@ -367,13 +323,15 @@ h1 img {
 /* コンタクト */
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: #fff;
   width: 80%;
   max-width: 600px;
   margin: 0 auto;
-  /* border: 1px solid #333; */
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   box-sizing: border-box;
 }
 
@@ -385,6 +343,10 @@ h1 img {
   gap: 14px;
 }
 
+.contact p {
+  padding-bottom: 40px;
+}
+
 .contact h2::before {
   content: "";
   display: block;
@@ -392,6 +354,27 @@ h1 img {
   height: 14px;
   background-color: #9783a1;
   flex-shrink: 0;
+}
+
+.contact_tel,
+.contact_line {
+  display: block;
+  width: 320px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact_tel {
+  color: #483a2c;
+  border: 1px solid #7d746b;
+}
+
+.contact_line {
+  color: #f7efe3;
+  background-color: #7d746b;
 }
 
 
