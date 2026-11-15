@@ -296,13 +296,21 @@ h1 img {
 
 
 .information h2 {
-  padding: 48px;
+  padding: 48px 0 0 0 ;
   letter-spacing: 0.3em;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
 }
+
+.information h3 {
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
   .information h2::before {
   content: "";
   display: block;
@@ -331,20 +339,26 @@ h1 img {
   width: 80%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 40px 0 0 0;
+  padding: 56px 0 0 0;
   box-sizing: border-box;
 }
 
 .contact h2 {
-  padding-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
 }
 
-.contact p {
+.contact h3{
   padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.contact p {
+  padding-bottom: 56px;
 }
 
 .contact h2::before {
@@ -388,7 +402,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 32px 32px 100px 32px;
+  padding: 56px 32px 100px 32px;
 }
 
 footer img {
@@ -603,7 +617,7 @@ small {
 
 /* アコーディオン */
 .faq_item {
-  border-bottom: 0.8px solid #483a2c;
+  border-bottom: 0.8px solid #948c85;
 }
 
 .faq_item summary {
@@ -776,7 +790,7 @@ small {
 }
 
 .introduction {
-  padding: 10px 0 40px 0;
+  padding: 10px 0 48px 0;
 }
 
 .introduction_enon {
@@ -811,15 +825,6 @@ small {
   text-align: center;
 }
 
-.menu ul {
-  flex: 1;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.menu li {
-  flex: 100%;
-}
  
 .price h3,
   .price_row {
@@ -831,8 +836,8 @@ small {
 }
 
 
-  .information h3 {
-  font-size: 0.9rem;
+ .information h3 {
+  font-size: 80%;
   }
   
 .information p {
@@ -843,6 +848,10 @@ small {
 
 .contact {
   font-size: 80%;
+}
+
+.contact h3 {
+  font-size: 90%;
 }
 
 
