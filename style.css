@@ -200,11 +200,14 @@ h1 img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   overflow: hidden;
   height: 0;
   transition: height 1s ease;
   box-sizing: border-box;
+}
+
+.accordion-content[hidden] {
+  display: none !important;
 }
 
 .accordion-content li {
