@@ -153,12 +153,7 @@ h1 img {
 
 .about {
   text-align: center;
-  padding: 40px 0 64px 0;
-}
-
-.about img {
-  width: 200px;
-  margin-top: 32px;
+  padding: 40px 0 56px 0;
 }
 
 .about h2,
@@ -168,8 +163,13 @@ h1 img {
   letter-spacing: 0.3em;
 }
 
-.about_en {
-  padding: 16px 0 56px 0;
+.about img {
+  width: 240px;
+  padding-top: 56px;
+}
+
+.about_copy {
+  padding: 32px 0 48px 0;
 }
 
 .about p{
@@ -178,11 +178,7 @@ h1 img {
 
 .about_open {
   padding: 24px;
-  line-height: 1.6;
-}
-
-.enon {
-  font-weight: 600;
+  line-height: 2.4;
 }
 
 
@@ -226,6 +222,11 @@ h1 img {
   padding-bottom: 64px;
 }
 
+.introduction_picture {
+  display: flex;
+  gap: 1px;
+}
+
 .introduction_inner {
   display: flex;
   justify-content: center;
@@ -233,11 +234,6 @@ h1 img {
   gap: 32px;
   margin: 0 auto;
   gap: 40px;
-}
-
-.introduction_picture {
-  display: flex;
-  gap: 4px;
 }
 
 .introduction_inner img {
@@ -760,6 +756,10 @@ small {
   .fixed-reserve {
     display: none;
   }
+ 
+.about img {
+  display: none;
+}
 
 }
 
@@ -824,12 +824,14 @@ small {
   font-size: 0.8rem;
 }
 
+
 .about img {
   width: 40%;
+  gap: 1px;
 }
 
 .introduction {
-  padding: 10px 4px 48px 4px;
+  padding: 10px 0 48px 0;
 }
 
 .introduction_enon {
