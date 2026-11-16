@@ -846,9 +846,18 @@ small {
 .introduction_inner {
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  display: flex;
 }
 
-.introduction_inner img {
+.introduction_picture {
+  display: flex;
+  width: 100%;
+  gap: 1px;
+}
+
+.introduction_picture img {
+  display: block;
   width: calc((100% - 4px) / 2);
   min-width: 0;
   height: auto;
