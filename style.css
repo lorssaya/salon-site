@@ -186,7 +186,7 @@ h1 img {
   transition: transform 0.3s ease, opacity;
 }
 
-.accordion-btn[aria-expanded="true"].accordion-icon::after{
+.accordion-btn[aria-expanded="true"] .accordion-icon::after {
   transform: rotate(90deg);
   opacity: 0;
 }
