@@ -139,6 +139,103 @@ h1 img {
   margin-top: 8px;
 }
 
+/* ハンバーガーアコーディオンメニュー */
+.accordion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  color: #483a2c;
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+  min-width: 280px;
+}
+
+/* プラスマーク */
+.accordion-icon {
+  position: absolute;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+  content: "";
+  position: absolute;
+  background-color: #7d746b;
+}
+
+.accordion-icon::before {
+  width: 12px;
+  height: 1px;
+  top: 5.5px;
+  left: 0;
+}
+
+.accordion-icon::after {
+  width: 1px;
+  height: 12px;
+  left: 5.5px;
+  top: 0;
+  transition: transform 0.3s ease, opacity;
+}
+
+.accordion-btn[aria-expanded="true"].accordion-icon::after{
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+/* 子メニュー */
+.accordion-content {
+  list-style: none;
+  padding: 24px 0 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-content li {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-content a {
+  color: #7d746b;
+  text-decoration: none;
+}
+
+.accordion-content[hidden] {
+  display: none;
+}
+
+.global li:has(> .accordion-btn) {
+flex: none;
+padding-bottom: 0;
+}
+
+.global .accordion-content {
+padding: 24px 0 0;
+margin: 0;
+gap: 12px;
+}
+
+.global .accordion-content li {
+flex: none;
+padding: 0;
+margin: 0;
+}
+
+
+
+
 .swan {
   text-align: center;
 }
