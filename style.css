@@ -163,11 +163,6 @@ h1 img {
   letter-spacing: 0.3em;
 }
 
-.about img {
-  width: 240px;
-  padding-top: 56px;
-}
-
 .about_copy {
   padding: 32px 0 48px 0;
 }
@@ -176,9 +171,16 @@ h1 img {
   line-height: 1.6;
 }
 
-.about_open {
-  padding: 24px;
-  line-height: 2.4;
+.about_img {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  padding-top: 56px;
+}
+
+.about_img img {
+  width: 240px;
+  height: auto;
 }
 
 
@@ -824,10 +826,8 @@ small {
   font-size: 0.8rem;
 }
 
-
-.about img {
+.about_img img {
   width: 40%;
-  gap: 1px;
 }
 
 .introduction {
