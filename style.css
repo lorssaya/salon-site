@@ -57,7 +57,18 @@ body.is-open {
 }
 
 .fixed-reserve-btn:first-child {
-  border-right: 1px solid #fff;
+  position: relative;
+}
+
+.fixed-reserve-btn:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background-color: #e3dcd2;
 }
 
 .fixed-reserve-btn i {
