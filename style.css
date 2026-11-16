@@ -60,8 +60,6 @@ body.is-open .fixed-reserve {
   pointer-events: none;
 }
 
-
-
 h1 {
   text-align: center;
 }
@@ -205,12 +203,17 @@ h1 img {
   justify-content: center;
   align-items: center;
   gap: 32px;
-  max-width: 900px;
   margin: 0 auto;
+  gap: 40px;
+}
+
+.introduction_picture {
+  display: flex;
+  gap: 4px;
 }
 
 .introduction_inner img {
-  width: 300px;
+  width: 320px;
   height: auto;
 }
 
@@ -520,6 +523,10 @@ small {
 
 /* ----------------------------------はじめてのお客様へ */
  
+.comingsoon {
+  text-align: center;
+}
+
 .servise_flow {
   display: flex;
   justify-content: center;
@@ -790,7 +797,7 @@ small {
 }
 
 .introduction {
-  padding: 10px 0 48px 0;
+  padding: 10px 48px 48px 48px;
 }
 
 .introduction_enon {
