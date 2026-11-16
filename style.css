@@ -332,16 +332,13 @@ margin: 0;
 }
 
 .introduction_picture {
-  display: flex;
-  gap: 1px;
+  text-align: center;
 }
 
 .introduction_inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  margin: 0 auto;
   gap: 40px;
 }
 
@@ -958,20 +955,8 @@ small {
   gap: 0;
 }
 
-.introduction_picture {
-  display: flex;
-  width: 100%;
-  gap: 1px;
-  margin: 0;
-  padding: 0;
-}
-
 .introduction_picture img {
-  display: block;
-  width: calc((100% - 1px) / 2);
-  min-width: 0;
-  height: auto;
-  object-fit: cover;
+  width: 50%;
 }
 
 .introduction_text {
