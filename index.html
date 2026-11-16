@@ -107,7 +107,7 @@
           皆さまにとって、<br>
           ひとつの居場所となれますように。<br><br>
         </p>
-        <a href="#" class="button_menu">施術メニュー 一覧</a>
+        <a href="menu.html" class="button_menu">施術メニュー 一覧</a>
       </div>
     </div>
   </section>
@@ -198,62 +198,93 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script>
-    $(function () {
+ 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(function () {
 
-      // ハンバーガーメニュー
-      $('.hamburger').on('click', function () {
-        $('.global').toggleClass('is-open');
-        $(this).toggleClass('is-open');
-        $('body').toggleClass('is-open');
-      });
-
-      // メニュー内リンク
-      $('.global a').on('click', function (e) {
-        e.preventDefault();
-
-        const href = $(this).attr('href');
-
-        $('.global').removeClass('is-open');
-        $('.hamburger').removeClass('is-open');
-        $('body').removeClass('is-open');
-
-        setTimeout(function () {
-          window.location.href = href;
-        }, 1200);
-      });
-
-      const accordionBtn = document.querySelector(".accordion-btn");
-      const accordionContent = document.querySelector(".accordion-content");
-      accordionBtn.addEventListener("click", () => {
-        const isOpen =
-          accordionBtn.getAttribute("aria-expanded") === "true";
-        accordionBtn.setAttribute("aria-expanded", String(!isOpen));
-        accordionContent.hidden = isOpen;
-      });
-
-
-      const introduction = document.querySelector('.introduction');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-          }
-        });
-      }, {
-        threshold: 0.2
-      });
-
-      observer.observe(introduction);
-
+    // ハンバーガーメニュー
+    $('.hamburger').on('click', function () {
+      $('.global').toggleClass('is-open');
+      $(this).toggleClass('is-open');
+      $('body').toggleClass('is-open');
     });
 
-  </script>
+    // メニュー内リンク
+    $('.global a').on('click', function (e) {
+      e.preventDefault();
+
+      const href = $(this).attr('href');
+
+      $('.global').removeClass('is-open');
+      $('.hamburger').removeClass('is-open');
+      $('body').removeClass('is-open');
+
+      setTimeout(function () {
+        window.location.href = href;
+      }, 1200);
+    });
+
+   const accordionBtn = document.querySelector(".accordion-btn");
+const accordionContent = document.querySelector(".accordion-content");
+
+accordionBtn.addEventListener("click", () => {
+  const isOpen =
+    accordionBtn.getAttribute("aria-expanded") === "true";
+
+  if (isOpen) {
+    // 閉じる
+    accordionContent.style.height =
+      accordionContent.scrollHeight + "px";
+
+    requestAnimationFrame(() => {
+      accordionContent.style.height = "0px";
+    });
+
+    accordionBtn.setAttribute("aria-expanded", "false");
+
+  } else {
+    // 開く
+    accordionContent.hidden = false;
+
+    accordionContent.style.height = "0px";
+
+    requestAnimationFrame(() => {
+      accordionContent.style.height =
+        accordionContent.scrollHeight + "px";
+    });
+
+    accordionBtn.setAttribute("aria-expanded", "true");
+
+    // アニメーション終了後に高さを自動調整
+    accordionContent.addEventListener("transitionend", function handler(e) {
+      if (e.propertyName === "height" &&
+          accordionBtn.getAttribute("aria-expanded") === "true") {
+        accordionContent.style.height = "auto";
+        accordionContent.removeEventListener("transitionend", handler);
+      }
+    });
+  }
+});
 
 
+    const introduction = document.querySelector('.introduction');
 
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    observer.observe(introduction);
+
+  });
+
+</script>
 </body>
 
 </html>

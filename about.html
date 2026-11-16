@@ -191,13 +191,42 @@
       });
 
       const accordionBtn = document.querySelector(".accordion-btn");
-      const accordionContent = document.querySelector(".accordion-content");
-      accordionBtn.addEventListener("click", () => {
-        const isOpen =
-          accordionBtn.getAttribute("aria-expanded") === "true";
-        accordionBtn.setAttribute("aria-expanded", String(!isOpen));
-        accordionContent.hidden = isOpen;
-      });
+const accordionContent = document.querySelector(".accordion-content");
+
+accordionBtn.addEventListener("click", () => {
+  const isOpen =
+    accordionBtn.getAttribute("aria-expanded") === "true";
+
+  if (isOpen) {
+    // 閉じる
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+
+    requestAnimationFrame(() => {
+      accordionContent.style.height = "0px";
+    });
+
+    accordionBtn.setAttribute("aria-expanded", "false");
+
+  } else {
+    // 開く
+    accordionContent.hidden = false;
+    accordionContent.style.height = "0px";
+
+    requestAnimationFrame(() => {
+      accordionContent.style.height = accordionContent.scrollHeight + "px";
+    });
+
+    accordionBtn.setAttribute("aria-expanded", "true");
+
+    accordionContent.addEventListener("transitionend", function handler(e) {
+      if (e.propertyName === "height" &&
+          accordionBtn.getAttribute("aria-expanded") === "true") {
+        accordionContent.style.height = "auto";
+        accordionContent.removeEventListener("transitionend", handler);
+      }
+    });
+  }
+});
 
 
       const introduction = document.querySelector('.introduction');
