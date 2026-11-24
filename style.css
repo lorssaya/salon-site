@@ -156,7 +156,7 @@ h1 img {
   min-width: 280px;
 }
 
-/* プラスマーク */
+/* 下向き矢印 */
 .accordion-icon {
   position: absolute;
   right: 10px;
@@ -164,32 +164,25 @@ h1 img {
   height: 10px;
 }
 
-.accordion-icon::before,
-.accordion-icon::after {
+.accordion-icon::before {
   content: "";
   position: absolute;
-  background-color: #7d746b;
-}
-
-.accordion-icon::before {
-  width: 12px;
-  height: 1px;
-  top: 5.5px;
-  left: 0;
-}
-
-.accordion-icon::after {
-  width: 1px;
-  height: 12px;
-  left: 5.5px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #7d746b;
+  border-bottom: 1px solid #7d746b;
+  transform: rotate(45deg);
   top: 0;
-  transition: transform 0.8s ease, opacity;
+  left: 0;
+  transition: transform 1s ease, top 1s ease;
 }
 
-.accordion-btn[aria-expanded="true"] .accordion-icon::after {
-  transform: rotate(90deg);
-  opacity: 0;
+/* 開いたとき：上向き */
+.accordion-btn[aria-expanded="true"] .accordion-icon::before {
+  transform: rotate(225deg);
+  top: 4px;
 }
+
 
 /* 子メニュー */
 .accordion-content {
@@ -202,7 +195,7 @@ h1 img {
   gap: 16px;
   overflow: hidden;
   height: 0;
-  transition: height 1s ease;
+  transition: height 0.3s ease;
   box-sizing: border-box;
 }
 
@@ -221,20 +214,20 @@ h1 img {
 }
 
 .global li:has(> .accordion-btn) {
-flex: none;
-padding-bottom: 0;
+  flex: none;
+  padding-bottom: 0;
 }
 
 .global .accordion-content {
-padding: 24px 0 0;
-margin: 0;
-gap: 16px;
+  padding: 24px 0 0;
+  margin: 0;
+  gap: 16px;
 }
 
 .global .accordion-content li {
-flex: none;
-padding: 0;
-margin: 0;
+  flex: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* アコーディオンの開閉アニメーション */
