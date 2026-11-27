@@ -372,12 +372,16 @@ h1 img {
   line-height: 1.8;
 }
 
-.introduction_text span {
+.course_menu {
   padding-right: 10px;
   text-decoration: underline;
   text-decoration-color: #c8b9cd;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
+
+.course_text {
+  font-size: 85%;
 }
 
 .introduction_text .button_menu {
