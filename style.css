@@ -274,8 +274,8 @@ h1 img {
 .about_img {
   display: flex;
   justify-content: center;
-  gap: 1px;
-  padding-top: 56px;
+  gap: 4px;
+  padding-top: 24px;
 }
 
 .about_img img {
@@ -283,10 +283,25 @@ h1 img {
   height: auto;
 }
 
-/* -------------バリュー */
+.about .hero_button {
+  width: 240px;
+  display: inline-block;
+  text-decoration: none;
+  color: #756b5c;
+  border: 1px solid #d8cfc0;
+  padding: 12px 26px;
+  margin: 24px 0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  transition: all 0.3s ease;
+}
 
-
-
+.hero_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 
 
 
@@ -936,6 +951,24 @@ small {
 .about_img img {
   width: 40%;
 }
+
+.hero_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+  .hero_buttons .hero_button {
+    display: block;
+    margin: 0;
+  }
+
+
+
+
 
 .introduction {
   padding: 10px 0 48px 0;
