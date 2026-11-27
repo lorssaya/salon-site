@@ -647,6 +647,10 @@ small {
   width: 180px;
 }
 
+.value_text p {
+  line-height: 1.8;
+}
+
 .profile {
   padding: 56px 0 56px 0;
   background-color: #fff;
