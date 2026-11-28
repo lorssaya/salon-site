@@ -657,7 +657,7 @@ small {
 
 .slides img {
   flex: 0 0 100%;
-  width: 100%;
+  width: 80%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
   display: block;
