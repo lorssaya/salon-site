@@ -663,7 +663,7 @@ small {
   flex-direction: column;
   gap: 100px;
   text-align: center;
-  padding: 24px;
+  padding: 32px;
 }
 
 .value_text p {
