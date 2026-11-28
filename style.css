@@ -113,6 +113,10 @@ h1 img {
   padding: 24px;
 }
 
+.global > ul > li:last-child {
+  white-space: nowrap;
+}
+
 .hamburger {
   display: none;
   position: absolute;
@@ -181,6 +185,11 @@ h1 img {
 .accordion-btn[aria-expanded="true"] .accordion-icon::before {
   transform: rotate(225deg);
   top: 4px;
+}
+
+/* 閉じているとき */
+.global .accordion-content[hidden] {
+  display: none !important;
 }
 
 
@@ -271,10 +280,12 @@ h1 img {
   line-height: 1.6;
 }
 
+
+
 .about_img {
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 1px;
   padding-top: 24px;
 }
 
@@ -287,8 +298,7 @@ h1 img {
   width: 240px;
   display: inline-block;
   text-decoration: none;
-  color: #756b5c;
-  border: 1px solid #d8cfc0;
+  border: 1px solid #b8ab9e;
   padding: 12px 26px;
   margin: 24px 0;
   font-size: 14px;
@@ -357,7 +367,7 @@ h1 img {
 }
 
 .introduction_inner img {
-  width: 320px;
+  width: 400px;
   height: auto;
 }
 
