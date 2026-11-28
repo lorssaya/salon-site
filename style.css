@@ -649,10 +649,6 @@ small {
   margin: 0 auto;
 }
 
-.slider p {
-  padding-top: 32px;
-}
-
 .slides {
   display: flex;
   transition: transform 0.8s ease;
@@ -672,6 +668,7 @@ small {
   justify-content: center;
   gap: 12px;
   margin-top: 16px;
+  padding-bottom: 24px;
 }
 
 .dots button {
