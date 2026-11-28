@@ -612,6 +612,34 @@ small {
 /* -----------------ここから2ページ目 */
 /* 当サロンについて */
 
+.enon_circles {
+  isolation: isolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #483a2c;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.on{
+  margin-left: -40px;
+}
+
+
 .enonvalue {
   background-color: #fff;
 }
@@ -620,6 +648,7 @@ small {
   text-align: center;
 }
 .value h2,
+.message h2,
 .profile h2 {
   font-family: "Kulim Park", sans-serif;
   letter-spacing: 0.3em;
@@ -634,7 +663,7 @@ small {
   flex-direction: column;
   gap: 100px;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .value_text p {
@@ -643,7 +672,7 @@ small {
 
 .slider {
   position: relative;
-  width: 400px;
+  width: 480px;
   max-width: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -688,97 +717,7 @@ small {
 
 
 
-/* 
-.slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slider input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.6s ease;
-}
-
-.slides img {
-  flex: 0 0 100%;
-  min-width: 0;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  display: block;
-}
-
-#slide1:checked ~ .slides {
-  transform: translateX(0);
-}
-
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.dots label {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #d8d2cd;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#slide1:checked ~ .dots label:nth-child(1),
-#slide2:checked ~ .dots label:nth-child(2),
-#slide3:checked ~ .dots label:nth-child(3) {
-  background: #8b7d72;
-} */
-
-
-
-
 /* ----------------オーナー挨拶・プロフィール */
-.enon_circles {
-  isolation: isolate;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 40px 0;
-}
-
-.circle {
-  width: 180px;
-  height: 180px;
-  border: 1px solid #483a2c;
-  border-radius: 50%;
-  background: transparent;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.on{
-  margin-left: -40px;
-}
-
 .message,
 .profile {
   text-align: center;
@@ -791,6 +730,7 @@ small {
   background-color: #fff;
 }
 
+.message h2,
 .profile h2 {
   padding-bottom: 56px;
 }
@@ -1195,8 +1135,6 @@ nav.local a {
 }
 
   .value h2 {
-    font-family: "Kulim Park", sans-serif;
-    letter-spacing: 0.3em;
     margin-top: -30px;
     padding: 10px 0;
   }
@@ -1245,7 +1183,7 @@ nav.local a {
 /* ここからFAQ */
 
 .faq h2 {
-   font-size: 1rem;
+   font-size: 1.2rem;
 }
 
 .faq,
