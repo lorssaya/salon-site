@@ -1153,6 +1153,7 @@ nav.local a {
   }
 
   .message {
+    padding-top: 32px;
      font-size: 0.8rem;
   }
 
