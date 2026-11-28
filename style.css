@@ -643,6 +643,53 @@ small {
 
 .slider {
   position: relative;
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+  touch-action: pan-y;
+}
+
+.slides img {
+  flex: 0 0 100%;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.dots button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #d8d2cd;
+  cursor: pointer;
+}
+
+.dots button.active {
+  background: #8b7d72;
+}
+
+
+
+
+/* 
+.slider {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -698,7 +745,7 @@ small {
 #slide2:checked ~ .dots label:nth-child(2),
 #slide3:checked ~ .dots label:nth-child(3) {
   background: #8b7d72;
-}
+} */
 
 
 
