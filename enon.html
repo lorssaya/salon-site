@@ -31,7 +31,7 @@
       <span></span>
     </button>
 
-     <nav class="global">
+    <nav class="global">
       <ul>
         <li><a href="index.html">TOP</a></li>
         <li class="nav-accordion">
@@ -54,48 +54,64 @@
     <h1 class="logo"><a href="index.html"><img src="swan_brown.png" alt="ロゴ"></a></h1>
   </header>
 
-<section class="value">
+  <section class="value">
     <h2>ENON</h2>
   </section>
-<section class="value_text">
-    <img src="#" alt="キービジュアル">
-    <br><br>
-    <p>ENON（エノン）は、<br>
-      埼玉県東松山市の閑静な住宅街にある、<br>
-      女性専用・完全予約制の<br>
-      プライベートフェイシャルサロンです。</p>
-    <br><br>
-    <p>エステに行ってみたいけれど、ちょっと緊張する。<br>
-      最近、肌の変化が気になってきた。<br>
-      たまには自分のために、ゆっくり過ごしたい。</p>
-    <br><br>
-    <p>ENONは、そんな気持ちにそっと寄り添い、<br>
-      年代を問わず、ふと思い立ったときに<br>
-      気軽に足を運んでいただけるサロンを目指しています。</p>
-    <br><br><br>
-    <img src="#" alt="施術風景写真スライドショー">
-    <br><br>
-    <p>落ち着いた空間の中で、周りを気にせず、<br>
-      ご自身だけの時間をゆっくりとお過ごしいただけます。</p>
-    <br><br><br>
-    <img src="#" alt="内観写真スライドショー">
-    <br><br>
-    <p>初めての方にもリラックスしていただけるよう、<br>
-      温かみのあるインテリアや、<br>
-      自然光が差し込む穏やかな空間づくりを大切にしています。</p>
-    <br><br><br><br>
-    <p>お肌を整えることはもちろん、日常から少し離れて、<br>
-      ほっとひと息つけるような時間を。</p>
-    <br>
-    <p>
-      ENONが、皆さまにとって<br>
-      心安らぐひとつの居場所となれますように。</p>
-    <br><br>
-    <p>ENON</p>
-  </section>
-  <hr>
 
- <footer>
+  <div class="value_text">
+    <div>
+      <p>ENON（エノン）は、<br>
+        埼玉県東松山市の閑静な住宅街にある、<br>
+        女性専用・完全予約制の<br>
+        プライベートフェイシャルサロンです。</p>
+      <br><br>
+      <p>エステに行ってみたいけれど、ちょっと緊張する。<br>
+        最近、肌の変化が気になってきた。<br>
+        たまには自分のために、ゆっくり過ごしたい。</p>
+      <br><br>
+      <p>ENONは、そんな気持ちにそっと寄り添い、<br>
+        年代を問わず、ふと思い立ったときに<br>
+        気軽に足を運んでいただけるサロンを目指しています。</p>
+    </div>
+    <div class="slider">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <div class="slides">
+        <img src="interior.jpg" alt="施術風景写真1">
+        <img src="interior2.jpg" alt="施術風景写真2">
+        <img src="interior3.jpg" alt="施術風景写真3">
+      </div>
+      <div class="dots">
+        <label for="slide1" aria-label="画像1"></label>
+        <label for="slide2" aria-label="画像2"></label>
+        <label for="slide3" aria-label="画像3"></label>
+      </div>
+    </div>
+    <div>
+      <p>落ち着いた空間の中で、周りを気にせず、<br>
+        ご自身だけの時間をゆっくりとお過ごしいただけます。</p>
+    </div>
+
+    <div>
+      <img src="#" alt="内観写真スライドショー">
+      <p>初めての方にもリラックスしていただけるよう、<br>
+        温かみのあるインテリアや、<br>
+        自然光が差し込む穏やかな空間づくりを大切にしています。</p>
+    </div>
+
+    <div>
+      <p>お肌を整えることはもちろん、日常から少し離れて、<br>
+        ほっとひと息つけるような時間を。
+        <br><br>
+        ENONが、皆さまにとって<br>
+        心安らぐひとつの居場所となれますように。<br><br><br>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+  <footer>
     <section>
       <img src="swan_brown.png" alt="ロゴ">
       <h2>ENON</h2>
@@ -116,88 +132,88 @@
 
 
 
- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script>
-  $(function () {
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function () {
 
-    // ハンバーガーメニュー
-    $('.hamburger').on('click', function () {
-      $('.global').toggleClass('is-open');
-      $(this).toggleClass('is-open');
-      $('body').toggleClass('is-open');
-    });
+      // ハンバーガーメニュー
+      $('.hamburger').on('click', function () {
+        $('.global').toggleClass('is-open');
+        $(this).toggleClass('is-open');
+        $('body').toggleClass('is-open');
+      });
 
-    // メニュー内リンク
-    $('.global a').on('click', function (e) {
-      e.preventDefault();
+      // メニュー内リンク
+      $('.global a').on('click', function (e) {
+        e.preventDefault();
 
-      const href = $(this).attr('href');
+        const href = $(this).attr('href');
 
-      $('.global').removeClass('is-open');
-      $('.hamburger').removeClass('is-open');
-      $('body').removeClass('is-open');
+        $('.global').removeClass('is-open');
+        $('.hamburger').removeClass('is-open');
+        $('body').removeClass('is-open');
 
-      setTimeout(function () {
-        window.location.href = href;
-      }, 1200);
-    });
+        setTimeout(function () {
+          window.location.href = href;
+        }, 1200);
+      });
 
-    const accordionBtn = document.querySelector(".accordion-btn");
-const accordionContent = document.querySelector(".accordion-content");
+      const accordionBtn = document.querySelector(".accordion-btn");
+      const accordionContent = document.querySelector(".accordion-content");
 
-accordionBtn.addEventListener("click", () => {
-  const isOpen =
-    accordionBtn.getAttribute("aria-expanded") === "true";
+      accordionBtn.addEventListener("click", () => {
+        const isOpen =
+          accordionBtn.getAttribute("aria-expanded") === "true";
 
-  if (isOpen) {
-    // 閉じる
-    accordionContent.style.height = accordionContent.scrollHeight + "px";
+        if (isOpen) {
+          // 閉じる
+          accordionContent.style.height = accordionContent.scrollHeight + "px";
 
-    requestAnimationFrame(() => {
-      accordionContent.style.height = "0px";
-    });
+          requestAnimationFrame(() => {
+            accordionContent.style.height = "0px";
+          });
 
-    accordionBtn.setAttribute("aria-expanded", "false");
+          accordionBtn.setAttribute("aria-expanded", "false");
 
-  } else {
-    // 開く
-    accordionContent.hidden = false;
-    accordionContent.style.height = "0px";
+        } else {
+          // 開く
+          accordionContent.hidden = false;
+          accordionContent.style.height = "0px";
 
-    requestAnimationFrame(() => {
-      accordionContent.style.height = accordionContent.scrollHeight + "px";
-    });
+          requestAnimationFrame(() => {
+            accordionContent.style.height = accordionContent.scrollHeight + "px";
+          });
 
-    accordionBtn.setAttribute("aria-expanded", "true");
+          accordionBtn.setAttribute("aria-expanded", "true");
 
-    accordionContent.addEventListener("transitionend", function handler(e) {
-      if (e.propertyName === "height" &&
-          accordionBtn.getAttribute("aria-expanded") === "true") {
-        accordionContent.style.height = "auto";
-        accordionContent.removeEventListener("transitionend", handler);
-      }
-    });
-  }
-});
-
-
-    const introduction = document.querySelector('.introduction');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
+          accordionContent.addEventListener("transitionend", function handler(e) {
+            if (e.propertyName === "height" &&
+              accordionBtn.getAttribute("aria-expanded") === "true") {
+              accordionContent.style.height = "auto";
+              accordionContent.removeEventListener("transitionend", handler);
+            }
+          });
         }
       });
-    }, {
-      threshold: 0.2
+
+
+      const introduction = document.querySelector('.introduction');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, {
+        threshold: 0.2
+      });
+
+      observer.observe(introduction);
+
     });
 
-    observer.observe(introduction);
-
-  });
-
-</script>
+  </script>
 
 </body>
 

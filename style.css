@@ -619,13 +619,91 @@ small {
 .value {
   text-align: center;
 }
-
 .value h2,
 .profile h2 {
   font-family: "Kulim Park", sans-serif;
   letter-spacing: 0.3em;
 }
 
+.value h2 {
+  padding: 40px;
+}
+
+.value_text {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.value_text p {
+  line-height: 1.8;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slides img {
+  flex: 0 0 100%;
+  min-width: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.dots label {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d8d2cd;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#slide1:checked ~ .dots label:nth-child(1),
+#slide2:checked ~ .dots label:nth-child(2),
+#slide3:checked ~ .dots label:nth-child(3) {
+  background: #8b7d72;
+}
+
+
+
+
+/* ----------------オーナー挨拶・プロフィール */
 .enon_circles {
   isolation: isolate;
   display: flex;
@@ -657,23 +735,6 @@ small {
 .profile {
   text-align: center;
   padding: 40px 0 56px 0;
-  line-height: 1.8;
-}
-
-.value h2 {
-  padding: 40px;
-}
-
-.value_text {
-  text-align: center;
-  padding: 40px 0;
-}
-
-.value_text img {
-  width: 180px;
-}
-
-.value_text p {
   line-height: 1.8;
 }
 
